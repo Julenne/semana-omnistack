@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Logon from './pages/Logon';
 
+import './global.css'
+//JSX(Javascript + HTML)
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Logon/>
+      );
 }
 
 export default App;
+
+/**
+ * exemplo -->>  let counter = useState(0);
+   * o useState retorna um array de duas posições onde:
+   * [valor,funcaoDeAtualizacao]
+   * logo:
+   *  
+   * let [counter,setCounter] = useState(0);
+  
+    function increment(){
+      setCounter(counter + 1) // counter += 1;
+      console.log(counter)
+    }
+   */
