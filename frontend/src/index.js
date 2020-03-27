@@ -11,3 +11,4 @@ ReactDOM.render(
 );
 
 //o id root está no index.html
+//instalar um cliente http pra fazer chamadas ao backend q se chama: axios
