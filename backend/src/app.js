@@ -1,12 +1,16 @@
 const express = require('express');
 const cors = require('cors');
+const { errors } = require('celebrate');//para que retorne um erro 400 e não 500
 const routes = require('./routes');
 const app = express();
 
 app.use(cors());
 app.use(express.json());//express vai converter o json no corpo do servidor em um objeto antes da requisição
 app.use(routes)
-app.listen(3333);
+
+app.use(errors());
+
+module.exports = app;
 /*Metodos HTTP
 *get: Buscar uma informação do backend
 *post: criar uma informação no backend
@@ -41,4 +45,8 @@ Para usar: package.json>scripts>start e digitar nodemon index.js e depois execut
  * "npx knex init" - executa o knex
  * "npx knex" - dá para ver alguns comandos importantes
  * 
+ * 
+ * Sobre fazer testes da aplicação: importante para saber se a plicação está funcionando corretamente mesmo com varias páginas (por exemplo)
+ * TDD(Test-driven Development) 
+ * Jest -> framework de testes utilizado na aplicação(npm install jest)
  */
