@@ -22,7 +22,7 @@ export default function Profile(){
         })
     }, [ongId]);
 
-    async function handleDeleteIncident(id){
+    async function handleDeleteIncident(id){//deleta um incidente
         try{
             await api.delete(`incidents/${id}`,{
                 headers:{
