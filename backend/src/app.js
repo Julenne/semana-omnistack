@@ -46,7 +46,7 @@ Para usar: package.json>scripts>start e digitar nodemon index.js e depois execut
  * "npx knex" - dá para ver alguns comandos importantes
  * 
  * 
- * Sobre fazer testes da aplicação: importante para saber se a plicação está funcionando corretamente mesmo com varias páginas (por exemplo)
+ * Sobre fazer testes da aplicação: importante para saber se a aplicação está funcionando corretamente mesmo com varias páginas (por exemplo)
  * TDD(Test-driven Development) 
  * Jest -> framework de testes utilizado na aplicação(npm install jest)
  */
